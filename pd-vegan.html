@@ -1,0 +1,137 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<!-- <link rel="stylesheet" href="./material.min.css">
+<script src="./material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Awesome Store</title> -->
+
+  <!--MatDes Links-->
+  <link rel="stylesheet" href="./material.min.css">
+  <script src="./material.min.js"></script>
+  <script src="./scripts/todo.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--MatDes Links-->
+
+<!--   <script language="javascript">
+    var numBuns = 0;
+    function addBuns(){
+      numBuns +=1;
+      console.log(numBuns);
+    }
+    function deleteBuns(){
+      if(numBuns > 0){
+        numBuns -=1;
+      }
+      console.log(numBuns);
+    }
+  </script> -->
+
+<!-- MatDes header -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Bun Bun Bake Shop</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="home.html">Home</a>
+        <a class="mdl-navigation__link" href="product-browsing.html">Flavors</a>
+        <a class="mdl-navigation__link" href="shopping-cart.html">
+        <!-- Number badge -->
+<!--         <span class="mdl-badge" id="number">Cart</span> -->
+
+        Cart:
+        <p id="cartSize" style="height:13%; width:25%">
+        <script language="javascript">
+          document.getElementById("cartSize").innerHTML = bunsInCart;
+        </script>
+<!--         <span class="mdl-badge" data-badge="4">Cart</span> -->
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mdl-layout__content">
+    <div class="page-content">
+    <!-- Your content goes here -->
+
+      <!-- Title -->
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--3-col"></div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <h1>
+            Vegan
+          </h1>
+        </div>
+        <div class="mdl-cell mdl-cell--3-col"></div>
+      </div>
+      <!-- Title -->
+
+
+      <!-- Description Grid -->
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--3-col"></div>
+        <div class="mdl-cell mdl-cell--3-col">
+          <img src="./resources/images/flavors/Vegan.png" style="width:100%;">
+        </div>
+        <div class="mdl-cell mdl-cell--1-col"></div>
+        <div class="mdl-cell mdl-cell--2-col">
+
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="document.getElementById('number').innerHTML=deleteBuns()" style="width:100%;">
+              <
+              </button>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col">
+              <button class="mdl-button mdl-js-button mdl-button--raised" style="width:100%;"">
+              <p id="number" style="height:25%;">
+                <script language="javascript">
+                  document.getElementById("number").innerHTML = numBuns;
+                </script>
+              </p>
+              </button>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="document.getElementById('number').innerHTML=addBuns()">
+              >
+              </button>
+            </div>
+          </div>
+
+            <div class="mdl-cell mdl-cell--12-col">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="document.getElementById('cartSize').innerHTML=updateCart()" style="width:100%;">
+              Add To Cart
+              </button>
+            </div>
+
+        </div>
+        <div class="mdl-cell mdl-cell--3-col"></div>
+      </div>
+      <!-- Description Grid -->
+
+  </main>
+</div>
+<!-- MatDes header -->
+
+
+  <!--The following line loads in your CSS style sheet-->
+<!--   <link rel="stylesheet" href="styles/index.css"> -->
+
+  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+<!--   <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet"> -->
+
+  <!--The following line loads in your JS script-->
+<!--   <script src="js/todo.js"></script> -->
+
+</html>

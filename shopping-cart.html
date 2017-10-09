@@ -1,0 +1,177 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<!-- <link rel="stylesheet" href="./material.min.css">
+<script src="./material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Awesome Store</title> -->
+
+  <!--MatDes Links-->
+  <link rel="stylesheet" href="./material.min.css">
+  <script src="./material.min.js"></script>
+  <script src="./scripts/todo.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--MatDes Links-->
+
+
+<!-- MatDes header -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Bun Bun Bake Shop</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="home.html">Home</a>
+        <a class="mdl-navigation__link" href="product-browsing.html">Flavors</a>
+        <a class="mdl-navigation__link" href="shopping-cart.html">Cart</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mdl-layout__content">
+    <div class="page-content">
+    <!-- Your content goes here -->
+
+      <!-- Title -->
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--3-col"></div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <h1>
+            Here Are The Contents Of Your Cart:
+          </h1>
+        </div>
+        <div class="mdl-cell mdl-cell--3-col"></div>
+      </div>
+      <!-- Title -->
+
+
+
+<!-- List with avatar and controls -->
+<style>
+.demo-list-control {
+  width: 100%;
+}
+
+.demo-list-radio {
+  display: inline;
+}
+</style>
+
+  <!-- Item 1-->
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--3-col"></div>
+    <div class="mdl-cell mdl-cell--6-col">
+      <ul class="demo-list-control mdl-list">
+        <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            <div class="mdl-cell mdl-cell--2-col">
+            <img src="./resources/images/flavors/Original.png" style="width:80%;"> 
+            </div>
+            <h4>Original</h4>          
+      <!-- Buttons -->
+      <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="document.getElementById('Original').innerHTML=deleteBunsForCart('Original')" style="width:100%;">
+              <
+              </button>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col">
+              <button class="mdl-button mdl-js-button mdl-button--raised" style="width:100%;"">
+              <p id="Original" style="height:25%;">
+                <script language="javascript">
+                  document.getElementById("Original").innerHTML = numOriginalBuns;
+                </script>
+              </p>
+              </button>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="document.getElementById('Original').innerHTML=addBunsForCart('Original')" style="width:100%;">
+              >
+              </button>
+            </div>
+        </div>
+      <!-- Buttons -->
+          </span>
+          <span class="mdl-list__item-secondary-action" >
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="document.getElementById('Original').innerHTML=empty('Original')" style="width:100%;">
+              Empty
+              </button>
+
+          </span>
+        </li>
+        <li class="mdl-list__item">
+      </li>
+      </ul>
+    </div>
+  </div> 
+  <!-- Item 1-->
+
+    <!-- Item 2-->
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--3-col"></div>
+    <div class="mdl-cell mdl-cell--6-col">
+      <ul class="demo-list-control mdl-list">
+        <li class="mdl-list__item">
+          <span class="mdl-list__item-primary-content">
+            <div class="mdl-cell mdl-cell--2-col">
+            <img src="./resources/images/flavors/Blackberry.png" style="width:80%;"> 
+            </div>
+            <h4>Blackberry</h4>          
+      <!-- Buttons -->
+      <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="document.getElementById('Blackberry').innerHTML=deleteBunsForCart('Blackberry')" style="width:100%;">
+              <
+              </button>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col">
+              <button class="mdl-button mdl-js-button mdl-button--raised" style="width:100%;"">
+              <p id="Blackberry" style="height:25%;">
+                <script language="javascript">
+                  document.getElementById("Blackberry").innerHTML = numBlackberryBuns;
+                </script>
+              </p>
+              </button>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="document.getElementById('Blackberry').innerHTML=addBunsForCart('Blackberry')" style="width:100%;">
+              >
+              </button>
+            </div>
+        </div>
+      <!-- Buttons -->
+          </span>
+          <span class="mdl-list__item-secondary-action" >
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="document.getElementById('Blackberry').innerHTML=empty('Blackberry')" style="width:100%;">
+              Empty
+              </button>
+
+          </span>
+        </li>
+        <li class="mdl-list__item">
+      </li>
+      </ul>
+    </div>
+  </div> 
+  <!-- Item 2-->
+
+
+  </main>
+</div>
+<!-- MatDes header -->
+
+
+
+</html>
